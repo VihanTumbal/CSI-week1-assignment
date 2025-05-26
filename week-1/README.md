@@ -1,12 +1,79 @@
-# React + Vite
+# React Registration Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive registration form built with React, showcasing form validation, dynamic UI updates, and responsive design.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Form Fields
 
-## Expanding the ESLint configuration
+- **Personal Information**
+  - First Name & Last Name
+  - Username
+  - Email
+  - Password (with show/hide toggle)
+  - Phone Number (with country code selection)
+  - Country & City (dynamic dropdowns)
+  - PAN & Aadhar Numbers (Indian identification)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Validation
+
+- ✨ Real-time field validation
+- 📝 Format requirements:
+  ```text
+  Email: valid email format
+  Phone: 10 digits
+  PAN: 5 letters + 4 digits + 1 letter (e.g., ABCDE1234F)
+  Aadhar: 12 digits
+  Password: 6+ chars, 1 uppercase, 1 lowercase, 1 digit
+  ```
+
+### User Experience
+
+- 🔄 Dynamic city selection based on country
+- 👁️ Password visibility toggle
+- ⚡ Instant validation feedback
+- 🔒 Submit button enables only when form is valid
+- ✅ Success page with submission summary
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/) - Frontend framework
+- [React Router](https://reactrouter.com/) - Navigation
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+
+## 📦 Installation
+
+1. Clone the repository
+
+```sh
+git clone <repository-url>
+cd week-1
+```
+
+2. Install dependencies
+
+```sh
+npm install
+# or
+yarn install
+```
+
+3. Start development server
+
+```sh
+npm run dev
+# or
+yarn dev
+```
+
+The application will open in your browser at `http://localhost:5173`
+
+## 🎯 Usage
+
+1. Access the application in your browser
+2. Fill out the registration form
+3. Observe real-time validation:
+   - Fields highlight errors as you type
+   - Error messages appear below invalid fields
+4. Submit when all fields are valid
+5. View submission summary on success page
